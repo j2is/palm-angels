@@ -1,0 +1,42 @@
+/////////////////
+// GRAPHICS
+
+// five stripes
+//.fivestripes                      { height: 49.7777vh }
+//.fivestripes, .fivestripes-stripe { width:  53.3333vh }
+//.fivestripes-stripe               { height:  7.1111vh; margin-bottom: 3.5555vh }
+.fivestripes-blank,
+.fivestripes-white { 
+  @extend .bg-white;
+  @extend .absolute;
+  @extend .r0;
+  @extend .w100p;
+}
+
+$fs-h: 100/14;
+.fivestripes-blank { height: $fs-h * 2% }
+.fivestripes-white { height: $fs-h * 1% }
+
+.fivestripes-blank-1 { @extend .t0 }
+.fivestripes-white-1 { top: $fs-h *  2% }
+.fivestripes-blank-2 { top: $fs-h *  3% }
+.fivestripes-white-2 { top: $fs-h *  5% }
+.fivestripes-blank-3 { top: $fs-h *  6% }
+.fivestripes-white-3 { top: $fs-h *  8% }
+.fivestripes-blank-4 { top: $fs-h *  9% }
+.fivestripes-white-4 { top: $fs-h * 11% }
+.fivestripes-blank-5 { top: $fs-h * 12% }
+.fivestripes-white-5 { top: 99.99% }
+
+
+// goldbars
+.goldbar   { background-attachment: fixed }
+.goldbar-l { background-position: top left }
+.goldbar-r { background-position: bottom right }
+
+.goldbars  { width: 50vh }
+.goldbar   { width: 5vh }
+@media( min-width: $screen-md-min ){ 
+  .goldbars { width: 38vh }
+  .goldbar  { width: 4vh }
+}

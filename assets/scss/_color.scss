@@ -1,0 +1,34 @@
+$pa-cream:       rgb( 247, 245, 241 );
+$pa-pink:        rgb( 250, 192, 190 );
+$pa-gold:        #A3946B;
+
+a { color: inherit }
+
+.transparent { color: transparent }
+
+body,
+.cl-black        { color: #000 }
+.cl-333          { color: #333 }
+.cl-ddd          { color: #ddd }
+.cl-white        { color: #fff }
+.cl-pink         { color: $pa-pink }
+.cl-gold         { color: $pa-gold }
+
+body,
+.bg-white        { background-color: #fff }
+.bg-black        { background-color: #000 }
+.bg-cream        { background-color: $pa-cream }
+.bg-pink         { background-color: $pa-pink }
+.bg-gold         { background-color: $pa-gold }
+.bg-gold-pattern { background-image: url('../i/graphics/gold.jpg') }
+
+nav {
+  &[data-color="positive"] { 
+    @extend .cl-333;
+    .pa-logo { fill: #333 }
+  }
+  &[data-color="negative"] { 
+    @extend .cl-ddd;
+    .pa-logo { fill: #ddd }
+  }
+}

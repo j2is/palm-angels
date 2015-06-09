@@ -1,0 +1,29 @@
+$screen-xs-max:  767px;
+
+$screen-sm-min:  768px;
+$screen-sm-max:  991px;
+
+$screen-md-min:  992px;
+$screen-md-max: 1199px;
+
+$screen-lg-min: 1200px;
+
+$basesize: 8px;
+
+$image-xs:  180px;
+$image-sm:  360px;
+$image-md:  720px;
+$image-lg: 1440px;
+
+// Reset Webkit default margin
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  margin: 0;
+}
+
+a { outline: 0 }

@@ -1,0 +1,50 @@
+html {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  font-feature-settings: "kern" 1;
+}
+
+.interstate {
+  font-family: "interstate_angelsbold", Interstate;
+}
+
+a,
+.no-deco { text-decoration: none }
+
+.ls-none { list-style: none }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+.h1 { font-size: 6vw }
+.h2 { font-size: 4vw }
+.h3 { font-size: 2.5vw }
+.h4 { font-size: 1.5vw }
+
+.ls-spread-005 { letter-spacing: .05em }
+.ls-spread-010 { letter-spacing: .10em }
+.ls-spread-015 { letter-spacing: .15em }
+
+.lh0     { line-height: 0 }
+.lh-120p { line-height: 1.2em }
+.lh-150p { line-height: 1.5em }
+
+.p { margin-bottom: 1em }
+
+// Modules
+b, strong, .bold { font-weight: bold; }
+.regular         { font-weight: normal; }
+.italic          { font-style: italic; }
+.caps            { text-transform: uppercase; }
+.lower           { text-transform: lowercase; }
+.align-left      { text-align: left; }
+.align-center    { text-align: center; }
+.align-right     { text-align: right; }
+
+.valign-top      { vertical-align: top; }
+.valign-middle   { vertical-align: middle; }
+.valign-bottom   { vertical-align: bottom; }

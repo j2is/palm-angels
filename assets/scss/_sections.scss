@@ -1,0 +1,48 @@
+.nav-link { @extend .pointer }
+
+#pa {
+  width: 200px;
+}
+
+#slides {
+  opacity: 0;
+  @include transition-duration( 0s );
+}
+
+[data-section="slides"]   #slides,
+[data-section="overview"] #slides {
+  @include transition-duration( .5s );
+}
+
+[data-section="overview"] #slides {
+  @include filter( grayscale( 1 ) contrast( 200% ) );
+  opacity: .2;
+}
+
+[data-section="slides"] #slides {
+  opacity: 1;
+}
+
+#overview {
+  @extend .hidden;
+  
+  img {
+    @extend .inline-block;
+    @extend .mt3;
+    @extend .mb3;
+    @extend .mr4;
+    @extend .ml4;
+    @extend .pointer;
+    width: 180px;
+  }
+}
+[data-section="overview"] #overview {
+  @extend .block;
+}
+
+#info {
+  @extend .hidden;
+}
+[data-section="info"] #info {
+  @extend .block;
+}

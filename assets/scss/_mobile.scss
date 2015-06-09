@@ -1,0 +1,17 @@
+@media( max-width: $screen-xs-max ){ 
+
+  .hide-xs { display: none }
+  
+}
+
+@media( max-width: $screen-xs-max ) and ( orientation: landscape ){ 
+
+  #blockmobileportrait { display: none }
+  
+}
+
+@media( min-width: $screen-sm-min ){ 
+  
+  .hide-sm { display: none }
+  
+}

@@ -1,0 +1,60 @@
+/////////////////
+// SLIDES
+[data-slide] {
+  @extend .absolute;
+  @extend .t0;
+  @extend .l0;
+  @extend .w100p;
+  @extend .h100p;
+  @extend .hidden;
+  &[data-slide="prev"],
+  &[data-slide="in"],
+  &[data-slide="now"],
+  &[data-slide="out"] { @extend .block }
+}
+
+
+
+
+/////////////////
+// VIDEO
+
+[data-support-video="false"] video,
+[data-support-autoplay="false"] video[autoplay] { @extend .hidden }
+
+
+
+
+/////////////////
+// DECORATION
+
+// Background modules
+.bg-center  { background-position: center }
+.bg-tile    { background-repeat: repeat }
+.bg-cover   { background-size: cover }
+.bg-contain { background-size: contain }
+
+// Shadow
+.shadow { box-shadow: -60px 40px 100px rgba(0,0,0,.2) }
+
+// Rotate
+.rotate90  { @include transform( rotate(  90deg ) ) }
+.rotate-90 { @include transform( rotate( -90deg ) ) }
+
+
+
+
+/////////////////
+// STATIC
+[data-prev-invisible][data-slide="prev"] .prev-invisible { @extend .hidden }
+
+// transform origin
+.transform-origin-center { @include transform-origin( 50% 50% ) }
+
+
+
+
+@import "graphics";
+@import "animations";
+@import "transitions";
+

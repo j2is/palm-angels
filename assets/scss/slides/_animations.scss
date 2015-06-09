@@ -1,0 +1,54 @@
+/////////////////
+// ANIMATIONS
+
+
+
+// spin #s-3 #s-11
+@include keyframes( spin-cw ) {
+  from { @include transform( rotate(   0deg ) ) }
+  to   { @include transform( rotate( 360deg ) ) }
+}
+@include keyframes( spin-ccw ) {
+  from { @include transform( rotate( 360deg ) ) }
+  to   { @include transform( rotate(   0deg ) ) }
+}
+.animate-spin-cw,
+.animate-spin-ccw {
+  @include animation( spin-cw 20s linear infinite );
+  @extend .transform-origin-center;
+}
+.animate-spin-ccw { @include animation-name( spin-ccw ) }
+
+
+
+// flash
+@include keyframes( flash ) {
+  from { visibility: visible }
+  to   { visibility: hidden }
+}
+.flash {
+  @include animation( flash .125s cubic-bezier(1, 0, 0, 1.25) infinite alternate );
+}
+
+
+
+
+// bg-move-x #s-30
+@include keyframes( bg-move-x-30 ) {
+    0% { background-position-x:    0px }
+  100% { background-position-x: 9999px }
+}
+#s-30 .bg-move-x { @include animation( bg-move-x-30 300s linear infinite ) }
+
+
+
+
+// bg-move-y #s-39
+@include keyframes( bg-move-y-39 ) {
+    0% { background-position-y:     0px }
+  100% { background-position-y: -2966px }
+}
+#s-39.bg-move-y { @include animation( bg-move-y-39 100s linear infinite ) }
+
+
+
